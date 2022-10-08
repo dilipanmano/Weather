@@ -1,4 +1,5 @@
 const storage = new Storage();
+storage.checkAPI();
 const weatherStorage = storage.getLocationData();
 
 const weather = new Weather(weatherStorage.city, weatherStorage.country);

@@ -28,4 +28,11 @@ class Storage {
         localStorage.setItem("city", city);
         localStorage.setItem("country", country);
     }
+
+    checkAPI() {
+        if (localStorage.getItem("API") === null) {
+            let userAPI = prompt("Enter API key from openweathermap.org");
+            localStorage.setItem("API", userAPI);
+        }
+    }
 }
